@@ -1,9 +1,31 @@
 .main {
   &__text {
-    font-family: Source Code Pro;
-    font-style: News;
+    flex-wrap: wrap;
+    font-family: "Codec Pro", sans-serif;
+    font-weight: 300;
     font-size: 90px;
     line-height: 100%;
     color: #fff;
+  }
+
+  &__word {
+    font-family: "Codec Pro", sans-serif;
+    font-weight: 300;
+    font-size: 90px;
+    line-height: 100%;
+    color: #fff;
+  }
+
+  &__wrapper {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+  }
+
+  &__line {
+    width: 100%;
+    height: 45px;
+    border-top: 1px solid #fff;
+    margin: 0 10px 0 20px;
   }
 }

@@ -8,17 +8,35 @@
     <title>World Country Info</title>
   </head>
   <body>
-    <section class="body__section">
-      <h1 class="logo">
-        <svg class="icon">
-          <use xlink:href="./images/icons/spright.svg#logo"></use>
-        </svg>
-      </h1>
-    </section>
+    <main>
+      <section class="container">
+        <h2 class="logo">
+          <svg class="icon">
+            <use xlink:href="./images/icons/spright.svg#logo"></use>
+          </svg>
+        </h2>
+      </section>
+      <section class="main__section container">
+        <div class="main__wrapper">
+          <h1 class="main__text">World country</h1>
+          <div class="main__line"></div>
+          <h3 class="main__word">Info</h3>
+        </div>
+        <div></div>
+      </section>
+      <section class="container">
+        <div class="earth">
+          <video
+            class="earth__video"
+            src="./video/earth.mp4"
+            poster="./video/earth.jpg"
+            autoplay
+            loop
+          ></video>
+          <div class="earth__moon"></div>
+          <div class="earth__moon small"></div>
+        </div>
+      </section>
+    </main>
   </body>
-  <main>
-    <section class="main__section">
-      <h1 class="main__text">World country</h1>
-    </section>
-  </main>
 </html>
