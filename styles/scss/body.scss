@@ -19,5 +19,17 @@ body {
 }
 
 .icon {
-  padding-top: 40px;
+  padding: 20px 0;
+
+  @media screen and (min-width: $phone) {
+    padding: 25px 0;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding: 30px 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 46px 0;
+  }
 }

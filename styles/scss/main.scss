@@ -2,18 +2,48 @@
   &__text {
     flex-wrap: wrap;
     font-family: "Codec Pro", sans-serif;
-    font-weight: 300;
-    font-size: 90px;
+    font-weight: 100;
+    font-size: 30px;
     line-height: 100%;
     color: #fff;
+
+    @media screen and (min-width: $phone) {
+      font-weight: 100;
+      font-size: 30px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      font-weight: 200;
+      font-size: 50px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-weight: 300;
+      font-size: 90px;
+    }
   }
 
   &__word {
     font-family: "Codec Pro", sans-serif;
-    font-weight: 300;
-    font-size: 90px;
+    font-weight: 100;
+    font-size: 30px;
     line-height: 100%;
     color: #fff;
+
+    @media screen and (min-width: $phone) {
+      font-weight: 100;
+      font-size: 30px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      font-weight: 200;
+      font-size: 50px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-weight: 300;
+      font-size: 90px;
+    }
   }
 
   &__wrapper {
@@ -24,8 +54,39 @@
 
   &__line {
     width: 100%;
-    height: 45px;
+    height: 20px;
     border-top: 1px solid #fff;
-    margin: 0 10px 0 20px;
+    margin: 0 5px 0 10px;
+
+    @media screen and (min-width: $phone) {
+      height: 20px;
+      margin: 0 6px 0 11px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      height: 30px;
+      margin: 0 10px 0 15px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      height: 45px;
+      margin: 0 10px 0 20px;
+    }
+  }
+
+  &__info {
+    position: absolute;
+    width: 164px;
+    height: 77px;
+    left: 1318px;
+    top: 257px;
+    font-family: "Codec Pro", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 110%;
+    text-align: right;
+    letter-spacing: 0.01em;
+    color: #ffffff;
   }
 }
