@@ -17,16 +17,33 @@
         </h2>
       </section>
       <section class="main__section container">
+        <lord-icon
+          src="https://cdn.lordicon.com/qmuwmmnl.json"
+          trigger="loop"
+          colors="primary:#ffe600"
+          state="hover"
+          style="width: 50px; height: 50px"
+        >
+        </lord-icon>
+        <lord-icon
+          src="https://cdn.lordicon.com/vacmyjrh.json"
+          trigger="loop"
+          colors="primary:#ffe600"
+          state="intro"
+          style="width: 50px; height: 50px"
+        >
+        </lord-icon>
         <div class="main__wrapper">
           <h1 class="main__text">World country</h1>
           <div class="main__line"></div>
           <h3 class="main__word">Info</h3>
-          <h4 class="main__info">
+        </div>
+        <div class="main__info">
+          <h4 class="main__info-text">
             This site intends to obtain information about the country and its
             flag
           </h4>
         </div>
-        <div></div>
       </section>
       <section class="container">
         <div class="earth">
@@ -36,11 +53,25 @@
             poster="./video/earth.jpg"
             autoplay
             loop
+            controls
           ></video>
           <div class="earth__moon"></div>
           <div class="earth__moon small"></div>
         </div>
+        <div class="search__wrapper">
+          <div class="search__results"></div>
+          <label class="search__label">
+            <svg class="search__icon">
+              <use xlink:href="./images/icons/spright.svg#search"></use>
+            </svg>
+            <input
+              class="search__input"
+              placeholder="Start typing country name..."
+            />
+          </label>
+        </div>
       </section>
     </main>
+    <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
   </body>
 </html>

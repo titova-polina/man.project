@@ -1,0 +1,1 @@
+.search__wrapper{display:flex;position:absolute;bottom:50px;left:50%;transform:translateX(-50%);max-width:680px;padding:4px;background:rgba(27,27,27,.5);-webkit-backdrop-filter:blur(2.5px);backdrop-filter:blur(2.5px);border-radius:9px}.search__wrapper:focus-within{width:calc(100% - 20px)}

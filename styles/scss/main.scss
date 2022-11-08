@@ -75,18 +75,33 @@
   }
 
   &__info {
-    position: absolute;
-    width: 164px;
-    height: 77px;
-    left: 1318px;
-    top: 257px;
-    font-family: "Codec Pro", sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 110%;
-    text-align: right;
-    letter-spacing: 0.01em;
-    color: #ffffff;
+    display: flex;
+    justify-content: flex-end;
+
+    &-text {
+      font-family: "Codec Pro", sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 12px;
+      text-align: right;
+      line-height: 110%;
+      color: #ffffff;
+      width: 150px;
+
+      @media screen and (min-width: $phone) {
+        font-size: 15px;
+        width: 150px;
+      }
+
+      @media screen and (min-width: $tablet) {
+        font-size: 18px;
+        width: 200px;
+      }
+
+      @media screen and (min-width: $desktop) {
+        font-size: 20px;
+        width: 211px;
+      }
+    }
   }
 }
