@@ -148,7 +148,7 @@ function getResultMarkup(data) {
   return `<div class="search__results-wrapper">                
             <h3 class="search__results-country">
             <span>${official || common}</span>
-            ${officialNative ? `<sub>/ ${officialNative}</sub>` : ""}
+            ${officialNative ? `<sub>${officialNative}</sub>` : ""}
             </h3>
               <ul class="search-list">
                 <li class="search-list__item">
