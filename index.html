@@ -4,35 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/scss/styles.css" />
     <title>World Country Info</title>
+    <link rel="stylesheet" href="./scss/styles.css" />
   </head>
   <body>
+    <header class="container">
+      <h2 class="logo">
+        <svg class="icon country">
+          <use xlink:href="./images/icons/spright.svg#logo"></use>
+        </svg>
+        <svg class="icon man">
+          <use xlink:href="./images/icons/spright.svg#man"></use>
+        </svg>
+      </h2>
+    </header>
     <main>
-      <section class="container">
-        <h2 class="logo">
-          <svg class="icon">
-            <use xlink:href="./images/icons/spright.svg#logo"></use>
-          </svg>
-        </h2>
-      </section>
       <section class="main__section container">
-        <lord-icon
-          src="https://cdn.lordicon.com/qmuwmmnl.json"
-          trigger="loop"
-          colors="primary:#ffe600"
-          state="hover"
-          style="width: 50px; height: 50px"
-        >
-        </lord-icon>
-        <lord-icon
-          src="https://cdn.lordicon.com/vacmyjrh.json"
-          trigger="loop"
-          colors="primary:#ffe600"
-          state="intro"
-          style="width: 50px; height: 50px"
-        >
-        </lord-icon>
         <div class="main__wrapper">
           <h1 class="main__text">World country</h1>
           <div class="main__line"></div>
@@ -47,31 +34,45 @@
       </section>
       <section class="container">
         <div class="earth">
-          <video
-            class="earth__video"
-            src="./video/earth.mp4"
-            poster="./video/earth.jpg"
-            autoplay
-            loop
-            controls
-          ></video>
+          <div class="earth__video-wrapper">
+            <video
+              class="earth__video"
+              src="./video/earth.mp4"
+              poster="./video/earth.jpg"
+              autoplay
+              loop
+              controls
+            ></video>
+          </div>
           <div class="earth__moon"></div>
           <div class="earth__moon small"></div>
         </div>
-        <div class="search__wrapper">
-          <div class="search__results"></div>
+        <div class="search__wrapper" id="wrapper">
+          <div class="search__results" id="results"></div>
           <label class="search__label">
             <svg class="search__icon">
               <use xlink:href="./images/icons/spright.svg#search"></use>
             </svg>
             <input
               class="search__input"
+              id="search"
               placeholder="Start typing country name..."
             />
           </label>
         </div>
       </section>
     </main>
+    <footer class="footer container">
+      <div class="footer__copyright">
+        <a
+          class="footer__year link"
+          href="https://github.com/titova-polina"
+          target="_blank"
+          >Titova Polina</a
+        ><span class="footer__year">2022</span>
+      </div>
+    </footer>
     <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
+    <script type="module" src="./js/index.js"></script>
   </body>
 </html>

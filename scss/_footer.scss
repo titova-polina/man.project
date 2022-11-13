@@ -1,0 +1,28 @@
+.footer {
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  &__copyright {
+    border-radius: 5px;
+    backdrop-filter: blur(2px) brightness(0.4);
+    padding: 8px 16px;
+  }
+  &__year {
+    font-family: "Codec Pro";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 13px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-left: 10px;
+
+    &.link {
+      color: #fff;
+      font-weight: 300;
+    }
+  }
+}
