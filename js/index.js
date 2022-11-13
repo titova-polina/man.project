@@ -7,6 +7,7 @@ const fullName = "?fullText=true";
 let timeout = null;
 
 async function getRestData(countryName, full = false) {
+  clearTimeout(timeout);
   if (!countryName) return null;
   resultRef.innerHTML = `<h3 class="search__error">
                           <lord-icon
@@ -19,7 +20,6 @@ async function getRestData(countryName, full = false) {
                           </lord-icon>
                           <span>${"SEARCHING...  " + countryName}</span>
                         </h3>`;
-  clearTimeout(timeout);
   return new Promise((resolve) => {
     timeout = setTimeout(async () => {
       try {
