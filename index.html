@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <link
       rel="apple-touch-icon"
@@ -57,19 +60,21 @@
         </div>
       </section>
       <section class="container">
-        <div class="earth">
-          <div class="earth__video-wrapper">
-            <video
-              class="earth__video"
-              src="./video/earth.mp4"
-              poster="./video/earth.jpg"
-              autoplay
-              loop
-              controls
-            ></video>
+        <div class="earth__wrapper">
+          <div class="earth">
+            <div class="earth__video-wrapper">
+              <video
+                class="earth__video"
+                src="./video/earth.mp4"
+                poster="./video/earth.jpg"
+                autoplay
+                loop
+                controls
+              ></video>
+            </div>
+            <div class="earth__moon"></div>
+            <div class="earth__moon small"></div>
           </div>
-          <div class="earth__moon"></div>
-          <div class="earth__moon small"></div>
         </div>
         <div class="search__wrapper" id="wrapper">
           <div class="search__results" id="results"></div>
