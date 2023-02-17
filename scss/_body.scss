@@ -42,7 +42,12 @@ body {
     height: 26px;
   }
   &.man {
-    width: 226px;
-    height: 97px;
+    width: 145px;
+    height: 65px;
+
+    @media screen and (min-width: $tablet) {
+      width: 227px;
+      height: 102px;
+    }
   }
 }
